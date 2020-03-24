@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/EnterName"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="280dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/SignUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="119dp"
+        android:layout_height="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="291dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:onClick="SignUpAndNotification"
+        android:text="SignUp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/EnterName"
+        app:layout_constraintLeft_toRightOf="@+id/EnterName"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>
